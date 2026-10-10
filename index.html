@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramya Bandarupalli | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <canvas id="grid-canvas"></canvas>
+
+  <!-- Sticky Glassmorphism Header (Zero Icons) -->
+  <header>
+    <div class="container header-inner">
+      <a href="#home" class="brand-wrap">
+        <span class="brand-name">Ramya Bandarupalli</span>
+        <span class="brand-badge">DEV</span>
+      </a>
+
+      <ul class="nav-list" id="navList">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-button" type="button" aria-label="Toggle visual theme">
+          [ LIGHT ]
+        </button>
+        <button id="mobileToggle" class="mobile-menu-btn" type="button" aria-label="Toggle navigation">
+          MENU
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pretitle">Computer Science Engineering</div>
+          <h1 class="hero-heading">
+            Ramya Bandarupalli
+          </h1>
+          <div class="typewriter-container">
+            <span id="typewriterText"></span><span class="typewriter-cursor"></span>
+          </div>
+          <p class="hero-description">
+            Undergraduate software developer at Rajiv Gandhi University of Knowledge Technologies. Focused on the convergence of accessible frontend architecture, reliable backend systems, and applied machine learning.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn btn-primary">Initiate Contact</a>
+            <button id="resumeBtn" class="btn btn-outline" type="button">Request Resume</button>
+          </div>
+          <div class="hero-meta-list">
+            <div class="hero-meta-item">
+              <span class="hero-meta-label">Affiliation</span>
+              <span class="hero-meta-val">RGUKT (B.Tech '27)</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-label">Primary Stack</span>
+              <span class="hero-meta-val">React / Python / SQL</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="hero-meta-label">Repository</span>
+              <span class="hero-meta-val"><a href="https://github.com/ramyabandarupalli0" target="_blank" rel="noopener">GitHub Profile</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-display">
+          <div class="profile-card">
+            <div class="profile-image-frame">
+              <img src="images/profile.jpg" alt="Ramya Bandarupalli" onerror="this.src='https://placehold.co/400x500/0f141c/94a3b8?text=Ramya+Bandarupalli'">
+            </div>
+            <div class="profile-caption">
+              <span class="profile-name">Ramya Bandarupalli</span>
+              <span class="profile-role">CSE UNDERGRADUATE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section with Quantified Stats -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        <!-- Minimal Stats Counter (Zero Icons) -->
+        <div class="stats-container">
+          <div class="stat-box">
+            <div class="stat-value" data-target="10">0</div>
+            <div class="stat-label">Core Technologies Mastered</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value" data-target="350">0</div>
+            <div class="stat-label">Hours of Engineering Practice</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-value" data-target="5">0</div>
+            <div class="stat-label">Academic Prototypes & Apps</div>
+          </div>
+        </div>
+
+        <div class="section-header">
+          <span class="section-label">Background</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">Academic foundation, software philosophy, and developer mindset.</p>
+        </div>
+
+        <div class="about-layout">
+          <div class="editorial-block">
+            <h3>Academic Trajectory</h3>
+            <p>
+              I am currently pursuing a Bachelor of Technology in Computer Science and Engineering at Rajiv Gandhi University of Knowledge Technologies (RGUKT), set to complete in 2027. My technical foundation was built upon strong physical sciences and mathematics during my Pre-University Course.
+            </p>
+            <p>
+              My coursework and self-directed engineering revolve around practical software architecture: building responsive web applications that maintain accessibility standards and clean separation of concerns.
+            </p>
+          </div>
+
+          <div class="editorial-block">
+            <h3>Technical Focus & Goals</h3>
+            <p>
+              My goal is to operate at the intersection of AI integration and full-stack development. I focus on developing clean client interfaces using React and vanilla JavaScript, complemented by Python services, Flask APIs, and relational SQL persistence.
+            </p>
+            <ul class="spec-list">
+              <li class="spec-item">
+                <span class="spec-key">Methodology</span>
+                <span class="spec-value">Modular & Semantic Design</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-key">Version Control</span>
+                <span class="spec-value">Git / GitHub Workflows</span>
+              </li>
+              <li class="spec-item">
+                <span class="spec-key">Target Roles</span>
+                <span class="spec-value">AI & Web Full Stack Intern</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Competencies</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">Categorized proficiency across development languages, environments, and workflows.</p>
+        </div>
+
+        <!-- Filter Tabs (Zero Icons) -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="all" type="button">All Skills</button>
+          <button class="filter-btn" data-category="frontend" type="button">Frontend</button>
+          <button class="filter-btn" data-category="backend" type="button">Backend & Data</button>
+          <button class="filter-btn" data-category="tools" type="button">Tools & AI</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <div class="skill-card" data-domain="frontend">
+            <div class="skill-header">
+              <span class="skill-title">HTML5 Semantic Markup</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="90"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="frontend">
+            <div class="skill-header">
+              <span class="skill-title">CSS3 (Flexbox & Grid)</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="frontend">
+            <div class="skill-header">
+              <span class="skill-title">JavaScript (ES6+)</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="frontend">
+            <div class="skill-header">
+              <span class="skill-title">React.js Architecture</span>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="78"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="backend">
+            <div class="skill-header">
+              <span class="skill-title">Python Core</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="backend">
+            <div class="skill-header">
+              <span class="skill-title">Flask Web Framework</span>
+              <span class="skill-percent">75%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="75"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="backend">
+            <div class="skill-header">
+              <span class="skill-title">SQL (Relational Databases)</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="tools">
+            <div class="skill-header">
+              <span class="skill-title">Git & GitHub</span>
+              <span class="skill-percent">86%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="86"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="tools">
+            <div class="skill-header">
+              <span class="skill-title">Streamlit Dashboards</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-domain="tools">
+            <div class="skill-header">
+              <span class="skill-title">VS Code & Debugging</span>
+              <span class="skill-percent">90%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" data-level="90"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Academic Records</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">Timeline of formal qualifications and institutional affiliations.</p>
+        </div>
+
+        <div class="edu-table-container">
+          <table class="edu-table">
+            <thead>
+              <tr>
+                <th>Qualification</th>
+                <th>Institution</th>
+                <th>Year</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="edu-program">B.Tech - Computer Science and Engineering</div>
+                </td>
+                <td>
+                  <div class="edu-institution">Rajiv Gandhi University of Knowledge Technologies</div>
+                </td>
+                <td>
+                  <span class="mono-tag">2027</span>
+                </td>
+                <td>
+                  <span class="status-badge pursuing">Pursuing</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="edu-program">Pre-University Course (PUC - MPC)</div>
+                </td>
+                <td>
+                  <div class="edu-institution">Rajiv Gandhi University of Knowledge Technologies</div>
+                </td>
+                <td>
+                  <span class="mono-tag">2023</span>
+                </td>
+                <td>
+                  <span class="status-badge completed">Completed</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="edu-program">Secondary School Certificate (SSC)</div>
+                </td>
+                <td>
+                  <div class="edu-institution">Holy Faith High School</div>
+                </td>
+                <td>
+                  <span class="mono-tag">2021</span>
+                </td>
+                <td>
+                  <span class="status-badge completed">Completed</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Engineering Output</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Real-world applications covering faculty administration, scheduling logic, and AI image analysis.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1: FlexSched -->
+          <article class="project-card">
+            <div>
+              <div class="project-tag">WEB APPLICATION</div>
+              <h3 class="project-title">FlexSched</h3>
+              <p class="project-summary">
+                A faculty timetable scheduling and swap management web application designed to simplify timetable exchanges, handle substitution requests, and resolve scheduling collisions.
+              </p>
+              <div class="tech-pill-list">
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">Bootstrap</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">State Logic</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span class="project-status-note">ACADEMIC PROJECT</span>
+              <button class="btn btn-outline btn-small open-modal-trigger" data-project-key="flexsched" type="button">
+                View Details
+              </button>
+            </div>
+          </article>
+
+          <!-- Project Card 2: Waste Detection -->
+          <article class="project-card">
+            <div>
+              <div class="project-tag">MACHINE INTELLIGENCE</div>
+              <h3 class="project-title">Waste Detection, Classification & Reporting</h3>
+              <p class="project-summary">
+                A Streamlit-based system for waste detection, classification, analytics, and civic reporting. Built the interactive user interface and telemetry dashboard modules.
+              </p>
+              <div class="tech-pill-list">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Streamlit</span>
+                <span class="tech-pill">Computer Vision</span>
+                <span class="tech-pill">Data Visuals</span>
+              </div>
+            </div>
+            <div class="project-footer">
+              <span class="project-status-note">COMPLETED PROJECT</span>
+              <button class="btn btn-outline btn-small open-modal-trigger" data-project-key="wastedetect" type="button">
+                View Details
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Detail Modal Popup (Zero Icons) -->
+    <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h3 class="modal-title" id="modalHeading">Project Specification</h3>
+          <button class="modal-close-btn" id="closeModalBtn" type="button">CLOSE [ESC]</button>
+        </div>
+        <div class="modal-body" id="modalBodyContent">
+          <!-- Dynamic JavaScript Population -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header" style="text-align: center;">
+          <span class="section-label">Communication</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc" style="margin-left: auto; margin-right: auto;">
+            Send a direct inquiry regarding internships, software development roles, or technical collaborations.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-input" placeholder="e.g. Alex Morgan" required>
+                <div class="error-hint" id="fullNameError">Full name is required (min. 2 characters).</div>
+              </div>
+
+              <div class="form-email form-group">
+                <label for="emailAddress" class="form-label">Email Address *</label>
+                <input type="email" id="emailAddress" class="form-input" placeholder="alex@domain.com" required>
+                <div class="error-hint" id="emailAddressError">A valid email address is required.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="tel" id="phoneNumber" class="form-input" placeholder="+91 98765 43210">
+                <div class="error-hint" id="phoneNumberError">Valid phone number digits required.</div>
+              </div>
+
+              <div class="form-group">
+                <label for="inquirySubject" class="form-label">Subject *</label>
+                <input type="text" id="inquirySubject" class="form-input" placeholder="Project or Internship Inquiry" required>
+                <div class="error-hint" id="inquirySubjectError">Subject line is required.</div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryMessage" class="form-label">Message *</label>
+              <textarea id="inquiryMessage" class="form-input" rows="5" maxlength="500" placeholder="State your requirements or inquiry details..." required></textarea>
+              <div class="char-indicator"><span id="charCount">0</span> / 500 characters</div>
+              <div class="error-hint" id="inquiryMessageError">Message must contain at least 15 characters.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Submit Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (Zero Icons) -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-meta">
+        <strong>Ramya Bandarupalli</strong> &bull; &copy; <span id="yearPlaceholder"></span> All rights reserved.
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://www.linkedin.com/in/ramya-bandarupalli" target="_blank" rel="noopener" class="footer-link">LinkedIn</a></li>
+        <li><a href="https://github.com/ramyabandarupalli0" target="_blank" rel="noopener" class="footer-link">GitHub</a></li>
+        <li><a href="mailto:ramyabandarupalli4@gmail.com" class="footer-link">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Toast Notification System (Zero Icons) -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
